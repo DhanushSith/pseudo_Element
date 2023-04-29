@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pseudo-Element</title>
+<style>
+.head{
+  text-align:center;
+  font-size:50px;
+}
+.one::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+  font-size:25px;
+  
+}
+.two::first-letter {
+  content:"Dhanush";
+  color: #ff0000;
+  font-variant: small-caps;
+  font-size:25px;
+}
+.three::before {
+  content:"Dhanush";
+  color:red;
+}
+.four::after {
+  content:"Dhanush";
+  color:red;
+}
+li::marker { 
+  color: red;
+  font-size: 23px;
+}
+.ppp::marker { 
+  color: red;
+  font-size: 23px;
+}
+.five::selection {
+  color: red;
+  background: yellow;
+}
+.six::counter-increment{
+  color:blue;
+}
+</style>
+</head>
+<body>
+
+<h1 class="head">Pseudo-Element</h1>
+
+<h1>::first-line</h1>
+
+<p class="one">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+<pre style="font-size:20px;">
+1.font properties
+2.color properties
+3.background properties
+4.word-spacing
+5.letter-spacing
+6.text-decoration
+7.vertical-align
+8.text-transform
+9.line-height
+10.clear
+</pre>
+
+<h1>::first-letter</h1>
+
+<p class="two">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+<pre style="font-size:20px;">
+1.font properties
+2.color properties 
+3.background properties
+4.margin properties
+5.padding properties
+6.border properties
+7.text-decoration
+8.vertical-align (only if "float" is "none")
+9.text-transform
+10.line-height
+11.float
+12.clear
+</pre>
+
+<h1>::before</h1>
+
+<h1 class="three">This is a heading</h1>
+
+<h1>::after</h1>
+
+<h1 class="four">This is a heading</h1>
+
+<h1>::marker</h1>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+<!-- <li><p class="ppp">This is a paragraph.</p></li> -->
+
+<h1>::selection</h1>
+
+<p class="five">This is a paragraph.</p>
+<div class="five">This is some text in a div element.</div>
+
+
+</body>
+</html>
